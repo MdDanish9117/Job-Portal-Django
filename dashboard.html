@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Job Portal</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2{
+            margin-bottom: 25px;
+            color: #333;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        a:hover{
+            background: #0056b3;
+        }
+        .logout{
+            background: #dc3545;
+        }
+        .logout:hover{
+            background: #a71d2a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome {{ request.session.user }}</h2>
+
+    <a href="/post_job/"> Post Job</a>
+    <a href="/jobs/">📄 View Jobs</a>
+    <a href="/" class="logout">🚪 Logout</a>
+</div>
+
+</body>
+</html>
