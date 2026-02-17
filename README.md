@@ -1,2 +1,1 @@
-# Job-Portal-Django
-Job Portal Web Application using Django &amp; MySQL
+Developed a full-stack Job Portal Web Application using Django and MySQL with features like user authentication, job posting, job listing, and dashboard. Implemented CRUD operations, session handling, and responsive UI using HTML & CSS.
